@@ -1,8 +1,7 @@
 # Multi-UE 5G Testbed Using Open5GS, OCUDU, ZeroMQ, GNU Radio, and Raspberry Pis
 
 ## Demo Video
-
-[Watch demo]([https://github.com/SanzidaH/OCUDU-srsRAN-5G-ZMQ-Testbed-with-Raspberry-Pi-UEs/blob/main/demo.html])
+[![Watch the demo](ph.png)](https://drive.google.com/file/d/1E4vb3TunYGgHGL87wx9UEeWyqkx5X8yH/view?usp=sharing)
 
 ## Overview
 
