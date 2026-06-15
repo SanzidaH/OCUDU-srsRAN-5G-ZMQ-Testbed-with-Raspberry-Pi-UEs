@@ -2,6 +2,8 @@
 
 ## Demo Video
 
+[![Watch the Video](https://docs.srsran.com/projects/4g/en/rfsoc/app_notes/source/index.html)](https://google.com](https://drive.google.com/file/d/1E4vb3TunYGgHGL87wx9UEeWyqkx5X8yH/view?usp=sharing)
+
 <iframe src="[https://google.com](https://drive.google.com/file/d/1E4vb3TunYGgHGL87wx9UEeWyqkx5X8yH/view?usp=sharing)" width="640" height="480" allow="autoplay"></iframe>
 
 ## Overview
