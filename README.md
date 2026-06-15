@@ -1,5 +1,9 @@
 # Multi-UE 5G Testbed Using Open5GS, OCUDU, ZeroMQ, GNU Radio, and Raspberry Pis
 
+## Demo Video
+
+<iframe src="[https://google.com](https://drive.google.com/file/d/1E4vb3TunYGgHGL87wx9UEeWyqkx5X8yH/view?usp=sharing)" width="640" height="480" allow="autoplay"></iframe>
+
 ## Overview
 
 This repository documents the setup of a software-defined 5G network using:
@@ -464,6 +468,47 @@ sudo ldconfig
 
 ---
 
+## Raspberry Pi SSH Connectivity Issues
+
+### Symptoms
+
+SSH becomes unreachable.
+
+### Solution
+
+```bash
+sudo ip link set eth0 down
+sleep 5
+sudo ip link set eth0 up
+```
+
+If necessary:
+
+```bash
+sudo reboot
+```
+
+---
+
+## Recommended Startup Order
+
+The most reliable sequence observed was:
+
+1. Open5GS
+2. gNB
+3. GNU Radio Broker
+4. UE1
+5. UE2
+6. UE3
+
+Wait approximately 10–15 seconds between UE launches.
+
+This sequence consistently produced successful multi-UE attachment and stable operation.
+
+---
+
+
+
 # UE-to-UE Communication
 
 Once all UEs are attached:
@@ -477,6 +522,7 @@ sudo ip netns exec ue1 ping 10.45.1.4
 Verify connectivity before attempting PQC experiments.
 
 ---
+
 
 # PQC Experiments
 
@@ -520,3 +566,5 @@ and measure:
 * CPU utilization
 * Throughput
 * Re-keying cost
+
+
