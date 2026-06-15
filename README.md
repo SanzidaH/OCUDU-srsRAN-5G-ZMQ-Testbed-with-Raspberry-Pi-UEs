@@ -2,7 +2,7 @@
 
 ## Demo Video
 
-[Watch demo]([https://your-username.github.io/your-repo/demo.html](https://github.com/SanzidaH/OCUDU-srsRAN-5G-ZMQ-Testbed-with-Raspberry-Pi-UEs/blob/main/demo.html)
+[Watch demo]([https://github.com/SanzidaH/OCUDU-srsRAN-5G-ZMQ-Testbed-with-Raspberry-Pi-UEs/blob/main/demo.html])
 
 ## Overview
 
