@@ -1,4 +1,4 @@
-# OCUDU-srsRAN-5G-ZMQ-Testbed-with-Three-Raspberry-Pi-UEs
+# OCUDU-srsRAN-5G-ZMQ-Testbed-with-Raspberry-Pi-UEs
 
 OCUDU / srsRAN 5G ZMQ Testbed with Three Raspberry Pi UEs
 
