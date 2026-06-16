@@ -226,7 +226,7 @@ sudo ./gnb \
 Expected:
 
 ```text
-gNB-N2 accepted
+gNB started
 ```
 
 ---
@@ -308,6 +308,10 @@ IPv4[10.45.1.4]
 ---
 
 ## Verify gNB
+
+```bash
+tail -50 /tmp/gnb.log
+```
 
 Expected:
 
@@ -557,7 +561,19 @@ sudo ip netns exec ue1 ...
 sudo ip netns exec ue2 ...
 ```
 
-and measure:
+## woflssl Installment
+
+```bash
+git clone https://github.com/wolfSSL/wolfssl.git
+cd wolfssl
+./autogen.sh
+./configure   --host=aarch64-linux-gnu   --enable-tls13   --enable-dtls   --enable-dtls13   --enable-dtls-mtu   --enable-dtls-frag-ch   --enable-mlkem   --enable-tls-mlkem-standalone   --enable-pqc-hybrids   --enable-extra-pqc-hybrids   --enable-experimental   --enable-mldsa   --enable-slhdsa   --enable-lms   --enable-xmss   --enable-dual-alg-certs   --enable-ecc   --enable-ecccustcurves   --enable-curve25519   --enable-curve448   --enable-ed25519   --enable-ed448   --enable-rsapss   --enable-dh   --enable-aesgcm   --enable-aesccm   --enable-chacha   --enable-poly1305   --enable-sha3   --enable-hkdf   --enable-alpn   --enable-sni   --enable-session-ticket   --enable-quic   --enable-opensslextra   --enable-examples   --enable-crypttests   --enable-testcert   --enable-debug
+make -j5
+sudo make install
+sudo ldconfig
+```
+
+can measure:
 
 * Handshake latency
 * Packet count
